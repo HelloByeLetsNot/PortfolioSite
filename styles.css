@@ -1,0 +1,213 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7; /* Light gray background */
+    color: #333; /* Dark text color */
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header styles */
+header {
+    background-color: #48c8a3; /* Light green */
+    padding: 1rem;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff; /* White text color */
+    text-decoration: none;
+    padding: 1rem;
+}
+
+/* Welcome section styles */
+.welcome {
+    text-align: center;
+    padding: 2rem;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Divider styles */
+.divider {
+    border-top: 1px solid #ddd; /* Light gray border color */
+    margin: 2rem 0; /* Adjust margin as needed */
+}
+
+/* Featured work section styles */
+.featured-work {
+    padding: 2rem;
+    background-color: #f0f0f0; /* Lighter gray background */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.featured-work h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #48c8a3; /* Light green */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.grid-item {
+    background-color: #fff; /* White background color */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+
+.grid-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.grid-item h3 {
+    margin-top: 1rem;
+    color: #48c8a3; /* Light green */
+}
+
+.grid-item p {
+    margin-top: 0.5rem;
+    color: #666; /* Darker text color */
+}
+
+/* Video area styles */
+.video-area {
+    padding: 2rem;
+    background-color: #f0f0f0; /* Lighter gray background */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.video-area h2 {
+    text-align: center;
+    color: #48c8a3; /* Light green */
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio for responsive video */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer styles */
+footer {
+    background-color: #48c8a3; /* Light green */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Gallery styles */
+.gallery {
+    text-align: center;
+    padding: 2rem;
+}
+
+.gallery-images {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.gallery-images img {
+    flex: 0 0 auto;
+    width: 300px; /* Adjust the width of each image as needed */
+    height: auto;
+    margin-right: 1rem;
+    scroll-snap-align: center;
+}
+
+.scroll-left,
+.scroll-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.scroll-left {
+    left: 0;
+}
+
+.scroll-right {
+    right: 0;
+}
+
+/* About section styles */
+.about {
+    text-align: center;
+    padding: 2rem;
+}
+
+.about h1 {
+    margin-bottom: 2rem;
+}
+
+.about-content {
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto; /* Center the content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 300px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+    border-radius: 150%; /* Makes the frame circular */
+    overflow: hidden;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire frame */
+}
+
+.text-content {
+    max-width: 60%; /* Adjust width as needed */
+    padding: 1rem;
+    background-color: #f0f0f0; /* Lighter gray background */
+    border-radius: 8px;
+    margin-left: 2rem; /* Adjust spacing between picture and text */
+}}}
